@@ -1,0 +1,40 @@
+const DUMMY_AUTO = [
+  {
+    id: "a1",
+    brand: "",
+    model: "",
+    description: "",
+    year: "",
+    kilometer: "",
+    color: "",
+    price: "",
+    date: "",
+    place: "",
+  },
+  {
+    id: "a1",
+    brand: "",
+    model: "",
+    description: "",
+    year: "",
+    kilometer: "",
+    color: "",
+    price: "",
+    date: "",
+    place: "",
+  },
+  {
+    id: "a1",
+    brand: "",
+    model: "",
+    description: "",
+    year: "",
+    kilometer: "",
+    color: "",
+    price: "",
+    date: "",
+    place: "",
+  },
+];
+
+export default DUMMY_AUTO;
