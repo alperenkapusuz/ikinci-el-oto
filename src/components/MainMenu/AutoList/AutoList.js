@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AutoCard from "../AutoCard/AutoCard";
 import FilterSection from "../FilterSection/FilterSection";
 import CategorySection from "../CategorySection/CategorySection";
+import "./AutoList.css"
 
 const AutoList = (props) => {
   const [searchBrand, setSearchBrand] = useState("");
@@ -15,14 +16,15 @@ const AutoList = (props) => {
     return <h2>No expenses found</h2>;
   }
   return (
-    <div>
-      <div>
+    <div className="AutoList__page">
+      <div className="FilterSection">
+      <div className="CategorySection">
         <CategorySection
           searchBrand={searchBrand}
           setSearchBrand={setSearchBrand}
         />
       </div>
-      <div>
+      <div className="FilterSection">
         <FilterSection
           searchPrice={searchPrice}
           setSearchPrice={setSearchPrice}
@@ -34,7 +36,8 @@ const AutoList = (props) => {
           setSearchColor={setSearchColor}
         />
       </div>
-      <div>
+      </div>
+      <div className="AutoCard">
         {props.items
           .filter((e) =>
             e.brand

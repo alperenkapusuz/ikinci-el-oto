@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { Form, FormGroup, Label, Input, Collapse } from "reactstrap";
+import { Card,Form, FormGroup, Label, Input} from "reactstrap";
+import "./CategorySection.css"
 
 const CategorySection = ({ searchBrand, setSearchBrand }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
-      <Label for="exampleSelect" onClick={toggle}>
+    <div className="CategorySection__page">
+      <Card>
+      <Label for="exampleSelect" >
         Otomobil
       </Label>
-      <Collapse isOpen={isOpen}>
         <Form>
           <FormGroup>
             <Input
@@ -25,7 +24,7 @@ const CategorySection = ({ searchBrand, setSearchBrand }) => {
             </Input>
           </FormGroup>
         </Form>
-      </Collapse>
+      </Card>
     </div>
   );
 };

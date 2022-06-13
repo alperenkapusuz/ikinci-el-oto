@@ -1,0 +1,17 @@
+.AutoList__page {
+  width: 1243px;
+  margin: auto;
+  display: flex;
+}
+
+.FilterSection {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.CategorySection {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+

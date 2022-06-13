@@ -1,0 +1,22 @@
+.AutoCard__Card{
+    width: 1000px;
+    margin-top: 5px;
+}
+
+.AutoCard__CardBody{
+    display: flex;
+}
+
+p{
+    padding-top: 45px;
+    text-align: center;
+    margin-left: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+.AutoCard__Button{
+    margin-top: 35px;
+    margin-left: 5px;
+    height: 50px;
+}

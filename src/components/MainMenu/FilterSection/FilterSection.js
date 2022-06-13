@@ -13,8 +13,6 @@ const FilterSection = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const [isOpen1, setIsOpen1] = useState(false);
-  const toggle1 = () => setIsOpen1(!isOpen1);
   const [isOpen2, setIsOpen2] = useState(false);
   const toggle2 = () => setIsOpen2(!isOpen2);
   const [isOpen3, setIsOpen3] = useState(false);
