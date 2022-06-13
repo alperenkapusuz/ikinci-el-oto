@@ -23,20 +23,3 @@ const AutoCard = (props) => {
 
 export default AutoCard;
 
-/*
-    id: "a1",
-    brand: "toyota",
-    model: "sadfdsa",
-    description: "fdsaf",
-    year: "sadfds",
-    kilometer: "fsadfa",
-    color: "sdafas",
-    price: "sdafsa",
-    date: "fsdaf",
-    place: "fsdaf",
-    imageURL: [
-      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
-      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
-      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
-    ],
-*/
