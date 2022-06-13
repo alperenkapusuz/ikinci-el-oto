@@ -30,7 +30,7 @@ const Navi = () => {
               />
             </NavItem>
           </Nav>
-          <NavLink href="/ilan ver/">İlan ver</NavLink>
+          <NavLink href="/addAuto">İlan ver</NavLink>
           <Button>Giriş yap / Üye Ol</Button>
         </Collapse>
       </Navbar>

@@ -76,7 +76,7 @@ const AutoAdd = () => {
           <FormGroup>
             <Label>brand</Label>
             <Input
-              type="text"
+              type="select"
               name="text"
               id="text"
               placeholder="Enter brand"
@@ -84,7 +84,11 @@ const AutoAdd = () => {
                 setForm({ ...form, brand: event.target.value })
               }
               value={form.brand}
-            />
+            >
+              <option>toyota</option>
+              <option>mercedes</option>
+              <option>audi</option>
+            </Input>
           </FormGroup>
           <FormGroup>
             <Label>model</Label>
@@ -141,19 +145,6 @@ const AutoAdd = () => {
               <option>blue</option>
               <option>green</option>
             </Input>
-          </FormGroup>
-          <FormGroup>
-            <Label>price</Label>
-            <Input
-              type="text"
-              name="text"
-              id="text"
-              placeholder="Enter price"
-              onChange={(event) =>
-                setForm({ ...form, price: event.target.value })
-              }
-              value={form.price}
-            />
           </FormGroup>
           <FormGroup>
             <Label>price</Label>
