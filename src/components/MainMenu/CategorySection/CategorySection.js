@@ -1,20 +1,31 @@
-import React from "react";
-import { ListGroup, ListGroupItem, Badge } from "reactstrap";
+import React, { useState } from "react";
+import { Form, FormGroup, Label, Input, Collapse } from "reactstrap";
 
-const CategorySection = () => {
+const CategorySection = ({ searchBrand, setSearchBrand }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-      <ListGroup>
-        <ListGroupItem action tag="button" className="justify-content-between">
-          Cras justo odio <Badge pill>14</Badge>
-        </ListGroupItem>
-        <ListGroupItem action tag="button" className="justify-content-between">
-          Dapibus ac facilisis in <Badge pill>2</Badge>
-        </ListGroupItem>
-        <ListGroupItem action tag="button" className="justify-content-between">
-          Morbi leo risus <Badge pill>1</Badge>
-        </ListGroupItem>
-      </ListGroup>
+      <Label for="exampleSelect" onClick={toggle}>
+        Otomobil
+      </Label>
+      <Collapse isOpen={isOpen}>
+        <Form>
+          <FormGroup>
+            <Input
+              type="select"
+              name="select"
+              id="exampleSelect"
+              value={searchBrand}
+              onChange={(e) => setSearchBrand(e.target.value)}
+            >
+              <option>toyota</option>
+              <option>audi</option>
+              <option>mercedes</option>
+            </Input>
+          </FormGroup>
+        </Form>
+      </Collapse>
     </div>
   );
 };

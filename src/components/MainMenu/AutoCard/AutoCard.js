@@ -1,19 +1,19 @@
 import React from "react";
-import {Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from "reactstrap"
+import { Card, CardBody, CardText, Button } from "reactstrap";
 
-const AutoCard = () => {
+const AutoCard = (props) => {
   return (
     <div>
       <Card>
         <CardBody>
-          <CardTitle tag="h5">Card title</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
-            Card subtitle
-          </CardSubtitle>
-          <CardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </CardText>
+          <CardText>{props.model}</CardText>
+          <CardText>{props.description}</CardText>
+          <CardText>{props.year}</CardText>
+          <CardText>{props.kilometer}</CardText>
+          <CardText>{props.color}</CardText>
+          <CardText>{props.price}</CardText>
+          <CardText>{props.date}</CardText>
+          <CardText>{props.place}</CardText>
           <Button>Button</Button>
         </CardBody>
       </Card>
@@ -22,3 +22,21 @@ const AutoCard = () => {
 };
 
 export default AutoCard;
+
+/*
+    id: "a1",
+    brand: "toyota",
+    model: "sadfdsa",
+    description: "fdsaf",
+    year: "sadfds",
+    kilometer: "fsadfa",
+    color: "sdafas",
+    price: "sdafsa",
+    date: "fsdaf",
+    place: "fsdaf",
+    imageURL: [
+      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
+      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
+      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
+    ],
+*/
