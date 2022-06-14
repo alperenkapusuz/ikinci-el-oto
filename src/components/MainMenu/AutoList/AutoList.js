@@ -20,6 +20,7 @@ const AutoList = (props) => {
       <div className="FilterSection">
         <div className="CategorySection">
           <CategorySection
+            props={props.items}
             searchBrand={searchBrand}
             setSearchBrand={setSearchBrand}
           />
