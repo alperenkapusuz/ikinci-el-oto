@@ -67,9 +67,31 @@ const FilterSection = ({
                 value={searchColor}
                 onChange={(e) => setSearchColor(e.target.value)}
               >
-                <option>red</option>
-                <option>blue</option>
-                <option>green</option>
+                              <option>altın</option>
+              <option>bej</option>
+              <option>beyaz</option>
+              <option>bordo</option>
+              <option>füme</option>
+              <option>gri</option>
+              <option>gri(gümüş)</option>
+              <option>gri(metalik)</option>
+              <option>gri(itanium)</option>
+              <option>kahverengi</option>
+              <option>kırmızı</option>
+              <option>lacivert</option>
+              <option>mavi</option>
+              <option>mavi(metalik)</option>
+              <option>mor</option>
+              <option>pembe</option>
+              <option>şampanya</option>
+              <option>sarı</option>
+              <option>siyah</option>
+              <option>turkuaz</option>
+              <option>green</option>
+              <option>turuncu</option>
+              <option>yeşil</option>
+              <option>yeşil(metalik)</option>
+              <option>diğer</option>
               </Input>
             </FormGroup>
           </Form>
