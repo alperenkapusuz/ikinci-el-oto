@@ -265,31 +265,3 @@ const AutoAdd = () => {
 
 export default AutoAdd;
 
-/* 
-    id: "a1",
-    brand: "toyota",
-    model: "sadfdsa",
-    description: "fdsaf",
-    year: "sadfds",
-    kilometer: "fsadfa",
-    color: "sdafas",
-    price: "sdafsa",
-    date: "fsdaf",
-    place: "fsdaf",
-    imageURL: [
-      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
-      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
-      "https://fiyatlisteleri.opel.com.tr/Assets/img/corsa_1.png",
-    ],
-
-                  <Input
-                className="mb-3"
-                type="select"
-                value={searchColor}
-                onChange={(e) => setSearchColor(e.target.value)}
-              >
-                <option>red</option>
-                <option>blue</option>
-                <option>green</option>
-              </Input>
-*/

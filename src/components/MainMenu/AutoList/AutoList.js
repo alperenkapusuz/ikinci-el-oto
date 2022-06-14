@@ -68,12 +68,15 @@ const AutoList = (props) => {
             <AutoCard
               key={autos.id}
               id={autos.id}
-              model={autos.model}
               imageURL={autos.imageURL}
-              price={autos.price}
-              place={autos.place}
+              model={autos.model}
+              description={autos.description}
               year={autos.year}
+              kilometer={autos.kilometer}
               color={autos.color}
+              price={autos.price}
+              date={autos.date}
+              place={autos.place}
             />
           ))}
       </div>

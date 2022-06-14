@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardText, Button } from "reactstrap";
+import { Card, CardBody, Button } from "reactstrap";
 import "./AutoCard.css"
 
 const AutoCard = (props) => {
@@ -7,14 +7,14 @@ const AutoCard = (props) => {
     <div>
       <Card className="AutoCard__Card">
         <CardBody className="AutoCard__CardBody">
-          <p>{props.model}</p>
-          <p>{props.description}</p>
-          <p>{props.year}</p>
-          <p>{props.kilometer}</p>
-          <p>{props.color}</p>
-          <p>{props.price}</p>
-          <p>{props.date}</p>
-          <p>{props.place}</p>
+          <div>{props.model}</div>
+          <div>{props.description}</div>
+          <div>{props.year}</div>
+          <div>{props.kilometer}</div>
+          <div>{props.color}</div>
+          <div>{props.price}</div>
+          <div>{props.date}</div>
+          <div>{props.place}</div>
           <Button className="AutoCard__Button">Button</Button>
         </CardBody>
       </Card>

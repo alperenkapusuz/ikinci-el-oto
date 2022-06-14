@@ -1,18 +1,27 @@
 .AutoCard__Card{
     width: 1000px;
-    margin-top: 5px;
+    /* background-color: red; */
 }
 
 .AutoCard__CardBody{
     display: flex;
+    height: 120px;
+    /* background-color: blue; */
+    margin-top: 5px;
+    
 }
 
-p{
-    padding-top: 45px;
+.AutoCard__CardBody div{
+    /* background-color: blue; */
+    /* padding-top: 45px; */
     text-align: center;
-    margin-left: 5px;
+    /* border: 1px solid ;
+    border-color: rgb(223, 223, 223); */
     width: 200px;
-    height: 100px;
+    height: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -17px ;
 }
 
 .AutoCard__Button{
