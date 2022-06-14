@@ -26,9 +26,6 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Navi />
-        {/* <CategorySection/>
-        <FilterSection/>
-        <AutoCard/> */}
         <Routes>
           <Route path="/" element={<AutoList items={autos}/>}/>
           <Route path="/addAuto" element={<AutoAdd/>}/>

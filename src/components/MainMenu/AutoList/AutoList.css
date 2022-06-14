@@ -5,13 +5,15 @@
 }
 
 .FilterSection {
-  width: 200px;
+  width: 176px;
   margin-right: 20px;
 }
 
 .CategorySection {
   margin-top: 10px;
   margin-bottom: 5px;
+  /* background-color: red; */
+  max-height: 500px;
 }
 
 .AutoList__Card{

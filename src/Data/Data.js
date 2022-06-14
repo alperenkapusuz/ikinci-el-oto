@@ -17,7 +17,7 @@ const DUMMY_AUTO = [
     ],
   },
   {
-    id: "a1",
+    id: "a2",
     brand: "audi",
     model: "aaaa",
     description: "aaaa",
@@ -34,7 +34,7 @@ const DUMMY_AUTO = [
     ],
   },
   {
-    id: "a1",
+    id: "a3",
     brand: "mercedes",
     model: "bbb",
     description: "bbb",
