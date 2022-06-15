@@ -20,7 +20,8 @@ const DUMMY_AUTO = [
     swap: "takasa uygun",
     fromWho: "galeriden",
     color:"gri",
-    description: "'İKİZLER'DEN' SPORTLİNE GÜMÜŞ GRİ-SUNROFF-HAFIZA-GERİ GÖRÜŞ",
+    title: "'İKİZLER'DEN' SPORTLİNE GÜMÜŞ GRİ-SUNROFF-HAFIZA-GERİ GÖRÜŞ",
+    description: "asdasdsadsadsadsadsad",
     imageURL: [
       "https://arbstorage.mncdn.com/ilanfotograflari/2022/06/14/20346427/9f77706c-6c09-49d7-ba13-1cedfacb51dc_image_for_silan_20346427_580x435.jpg",
       "https://arbstorage.mncdn.com/ilanfotograflari/2022/06/14/20346427/41e56936-d7a5-4954-8f54-7876b45fe8b9_image_for_silan_20346427_580x435.jpg",
@@ -48,7 +49,8 @@ const DUMMY_AUTO = [
     swap: "takasa uygun",
     fromWho: "galeriden",
     color:"gri",
-    description: "'İKİZLER'DEN' SPORTLİNE GÜMÜŞ GRİ-SUNROFF-HAFIZA-GERİ GÖRÜŞ",
+    title: "'İKİZLER'DEN' SPORTLİNE GÜMÜŞ GRİ-SUNROFF-HAFIZA-GERİ GÖRÜŞ",
+    description: "asdasdsadsadsadsadsad",
     imageURL: [
       "https://arbstorage.mncdn.com/ilanfotograflari/2022/06/14/20346427/9f77706c-6c09-49d7-ba13-1cedfacb51dc_image_for_silan_20346427_580x435.jpg",
       "https://arbstorage.mncdn.com/ilanfotograflari/2022/06/14/20346427/41e56936-d7a5-4954-8f54-7876b45fe8b9_image_for_silan_20346427_580x435.jpg",
@@ -76,7 +78,8 @@ const DUMMY_AUTO = [
     swap: "takasa uygun",
     fromWho: "galeriden",
     color:"gri",
-    description: "'İKİZLER'DEN' SPORTLİNE GÜMÜŞ GRİ-SUNROFF-HAFIZA-GERİ GÖRÜŞ",
+    title: "'İKİZLER'DEN' SPORTLİNE GÜMÜŞ GRİ-SUNROFF-HAFIZA-GERİ GÖRÜŞ",
+    description: "asdasdsadsadsadsadsad",
     imageURL: [
       "https://arbstorage.mncdn.com/ilanfotograflari/2022/06/14/20346427/9f77706c-6c09-49d7-ba13-1cedfacb51dc_image_for_silan_20346427_580x435.jpg",
       "https://arbstorage.mncdn.com/ilanfotograflari/2022/06/14/20346427/41e56936-d7a5-4954-8f54-7876b45fe8b9_image_for_silan_20346427_580x435.jpg",

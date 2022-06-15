@@ -160,7 +160,7 @@ const AutoList = (props) => {
               id={autos.id}
               imageURL={autos.imageURL}
               model={autos.model}
-              description={autos.description}
+              title={autos.title}
               year={autos.year}
               kilometer={autos.kilometer}
               color={autos.color}

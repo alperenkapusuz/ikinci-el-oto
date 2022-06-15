@@ -17,7 +17,7 @@ const AutoCard = (props) => {
               />
             </div>
             <div style={{ width: "160px" }}>{props.model}</div>
-            <div style={{ width: "248.675px" }}>{props.description}</div>
+            <div style={{ width: "248.675px" }}>{props.title}</div>
             <div style={{ width: "42.25px" }}>{props.year}</div>
             <div style={{ width: "82.625px" }}>{props.kilometer}</div>
             <div style={{ width: "71px" }}>{props.color}</div>
