@@ -57,8 +57,6 @@ const FilterSection = ({
   const [isOpen12, setIsOpen12] = useState(false);
   const toggle13 = () => setIsOpen13(!isOpen13);
   const [isOpen13, setIsOpen13] = useState(false);
-  const toggle14 = () => setIsOpen14(!isOpen14);
-  const [isOpen14, setIsOpen14] = useState(false);
 
   return (
     <div>
@@ -274,8 +272,8 @@ const FilterSection = ({
           </Form>
         </Collapse>
 
-        <Label onClick={toggle12}>Motor Gücü</Label>
-        <Collapse isOpen={isOpen12}>
+        <Label onClick={toggle11}>Motor Gücü</Label>
+        <Collapse isOpen={isOpen11}>
           <Form>
             <FormGroup check>
               <Input
@@ -288,8 +286,8 @@ const FilterSection = ({
           </Form>
         </Collapse>
 
-        <Label onClick={toggle13}>İlan Sahibi</Label>
-        <Collapse isOpen={isOpen13}>
+        <Label onClick={toggle12}>İlan Sahibi</Label>
+        <Collapse isOpen={isOpen12}>
           <Form>
             <FormGroup check>
               <Input
@@ -306,8 +304,8 @@ const FilterSection = ({
           </Form>
         </Collapse>
 
-        <Label onClick={toggle14}>İlan Tarihi</Label>
-        <Collapse isOpen={isOpen14}>
+        <Label onClick={toggle13}>İlan Tarihi</Label>
+        <Collapse isOpen={isOpen13}>
           <Form>
             <FormGroup check>
               <Input

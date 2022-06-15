@@ -6,7 +6,7 @@ import "./AutoCard.css";
 const AutoCard = (props) => {
   return (
     <div>
-      <Link to={`/detay`}>
+      <Link to={`/${props.id}`}>
         <Card className="AutoCard__Card">
           <CardBody className="AutoCard__CardBody">
             <div style={{ width: "161px", marginLeft: "-16px" }}>

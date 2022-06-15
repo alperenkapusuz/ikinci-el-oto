@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Button, Form, FormGroup, Label, Input, Card } from "reactstrap";
+import { Button, FormGroup, Label, Input, Card } from "reactstrap";
 import DUMMY_AUTO from "../../Data/Data";
 import "./AutoAdd.css";
+import Moment  from "moment";
 
 const AutoAdd = () => {
   const [data, setData] = useState([]);
   const [form, setForm] = useState({
     id: Math.random().toString(),
     price: "",
-    date: new Date(),
+    date: Moment().format("MMM Do YY"),
     place: "",
     brand: "",
     model: "",
@@ -531,6 +532,15 @@ const AutoAdd = () => {
             </FormGroup>
           </div>
         </div>
+      </Card>
+      <Card className="AutoAdd__Button">
+        <Button
+          className="ProductAdd__button"
+          color="success"
+          onClick={saveItem}
+        >
+          EKLE
+        </Button>
       </Card>
     </div>
   );

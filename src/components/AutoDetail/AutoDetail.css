@@ -1,0 +1,54 @@
+.AutoDetail__page{
+    height: 3544.1px;
+    width: 900px;
+    margin: 0px 10px 0px 0px;
+    padding: 0pc 0px 2px 0px;
+    margin: auto;
+}
+
+.AutoDetail__title{
+    height: 40px;
+    width: 900px;
+    padding: 8px 0px 8px 0px;
+    overflow: hidden;
+    display: block;
+}
+
+/* .AutoDetail__ImageCards{
+    background-color: red;
+    height: 410px;
+    width: 580px;
+} */
+
+.ProductDetail__Image{
+    height: 410px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+
+.AutoDetail__Info{
+    height: 636.8px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.AutoDetail__Info p{
+    width: 150px;
+}
+
+.AutoDetail__Info div{
+    height: 24px;
+    width: 150px;
+}
+
+
+.AutoDetail__InfoAndImg{
+    display: flex;
+}
+
+.AutoDetail__Description{
+    width: 500px;
+    height: 405px;
+    margin-top: -280px;
+}

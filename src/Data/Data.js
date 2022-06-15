@@ -1,6 +1,6 @@
 const DUMMY_AUTO = [
   {
-    id: "a3",
+    id: "a1",
     price: "790.000",
     date: "14 Haziran 2022",
     place: "İstanbul/Büyükçekmece",
@@ -29,7 +29,7 @@ const DUMMY_AUTO = [
     ],
   },
   {
-    id: "a3",
+    id: "a2",
     price: "790.000",
     date: "14 Haziran 2022",
     place: "İstanbul/Büyükçekmece",
