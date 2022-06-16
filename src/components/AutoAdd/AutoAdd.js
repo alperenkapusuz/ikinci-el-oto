@@ -9,7 +9,7 @@ const AutoAdd = () => {
   const [form, setForm] = useState({
     id: Math.random().toString(),
     price: "",
-    date: Moment().format("MMM Do YY"),
+    date: Moment().format("MMM DD YY"),
     place: "",
     brand: "",
     model: "",
