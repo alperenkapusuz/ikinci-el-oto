@@ -9,6 +9,9 @@ import { useAuthState } from "react-firebase-hooks/auth";
 const AutoAdd = () => {
   const [data, setData] = useState([]);
   const [user] = useAuthState(auth);
+  const [username, setUsername] = useState("");
+  const [userGmail, setUserGmail] = useState("");
+  const [userPhoto, setUserPhoto] = useState("");
   const [form, setForm] = useState({
     id: Math.random().toString(),
     price: "",
@@ -63,8 +66,24 @@ const AutoAdd = () => {
       return;
     }
 
+    const userInfo = auth.currentUser;
+    let uname = form.username;
+    let uGmail = form.userGmail;
+    let uPhoto = form.userPhoto;
+    if (userInfo != null) {
+      uname = userInfo.displayName;
+      uGmail = userInfo.email;
+      uPhoto = userInfo.photoURL;
+    }
+    setUsername(uname);
+    setUserGmail(uGmail);
+    setUserPhoto(uPhoto);
+
     data.push({
       ...form,
+      username: uname,
+      userGmail: uGmail,
+      userPhoto: uPhoto,
     });
 
     localStorage.setItem("data", JSON.stringify(data));

@@ -6,6 +6,7 @@ import AutoList from "./components/MainMenu/AutoList/AutoList";
 import AutoAdd from "./components/AutoAdd/AutoAdd";
 import AutoDetail from "./components/AutoDetail/AutoDetail";
 import Error from "./components/Error/Error";
+import Chat from "./components/Messages/Chat"
 
 const App = () => {
   const [autos, setAutos] = useState([]);
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/addAuto" element={<AutoAdd />} />
           <Route path="/:autoId" element={<AutoDetail items={autos} />} />
           <Route path="*" element={<Error />} />
+          <Route path="/chat" element={<Chat/>} />
         </Routes>
       </BrowserRouter>
     </div>
