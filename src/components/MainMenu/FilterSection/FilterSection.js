@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, Form, FormGroup, Input, Label, Collapse } from "reactstrap";
+import "./FilterSection.css";
 
 const FilterSection = ({
   searchPrice,
@@ -60,10 +61,10 @@ const FilterSection = ({
 
   return (
     <div>
-      <Card>
-        <Label onClick={toggle}>Fiyat</Label>
-        <Collapse isOpen={isOpen}>
-          <Form>
+      <Card className="FilterSection__page">
+        <Label style={{  marginLeft: "15px" }} onClick={toggle}>Fiyat</Label>
+        <Collapse  isOpen={isOpen}>
+          <Form >
             <FormGroup check>
               <Input
                 className="mb-3"
@@ -74,9 +75,9 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
+        <hr />
         <Form>
-          <Label>Adres</Label>
+          <Label style={{  marginLeft: "15px" }} >Adres</Label>
           <FormGroup check>
             <Input
               className="mb-3"
@@ -86,8 +87,8 @@ const FilterSection = ({
             />
           </FormGroup>
         </Form>
-
-        <Label onClick={toggle2}>Yıl</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle2}>Yıl</Label>
         <Collapse isOpen={isOpen2}>
           <Form>
             <FormGroup check>
@@ -100,8 +101,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle3}>Vites Tipi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle3}>Vites Tipi</Label>
         <Collapse isOpen={isOpen3}>
           <Form>
             <FormGroup check>
@@ -118,8 +119,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle4}>Yakıt Tipi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle4}>Yakıt Tipi</Label>
         <Collapse isOpen={isOpen4}>
           <Form>
             <FormGroup check>
@@ -138,8 +139,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle5}>Kilometre</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle5}>Kilometre</Label>
         <Collapse isOpen={isOpen5}>
           <Form>
             <FormGroup check>
@@ -152,8 +153,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle6}>Kasa Tipi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle6}>Kasa Tipi</Label>
         <Collapse isOpen={isOpen6}>
           <Form>
             <FormGroup check>
@@ -178,8 +179,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle7}>Color</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle7}>Color</Label>
         <Collapse isOpen={isOpen7}>
           <Form>
             <FormGroup check>
@@ -218,8 +219,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle8}>Hasar Bilgisi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle8}>Hasar Bilgisi</Label>
         <Collapse isOpen={isOpen8}>
           <Form>
             <FormGroup check>
@@ -238,8 +239,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle9}>Çekiş</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle9}>Çekiş</Label>
         <Collapse isOpen={isOpen9}>
           <Form>
             <FormGroup check>
@@ -257,8 +258,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle10}>Motor Hacmi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle10}>Motor Hacmi</Label>
         <Collapse isOpen={isOpen10}>
           <Form>
             <FormGroup check>
@@ -271,8 +272,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle11}>Motor Gücü</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle11}>Motor Gücü</Label>
         <Collapse isOpen={isOpen11}>
           <Form>
             <FormGroup check>
@@ -285,15 +286,15 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle12}>İlan Sahibi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle12}>İlan Sahibi</Label>
         <Collapse isOpen={isOpen12}>
           <Form>
             <FormGroup check>
               <Input
                 className="mb-3"
                 type="select"
-                value={ searchFromWho}
+                value={searchFromWho}
                 onChange={(e) => setSearchFromWho(e.target.value)}
               >
                 <option>Sahibinden</option>
@@ -303,8 +304,8 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        <Label onClick={toggle13}>İlan Tarihi</Label>
+        <hr />
+        <Label style={{  marginLeft: "15px" }}  onClick={toggle13}>İlan Tarihi</Label>
         <Collapse isOpen={isOpen13}>
           <Form>
             <FormGroup check>
@@ -317,9 +318,6 @@ const FilterSection = ({
             </FormGroup>
           </Form>
         </Collapse>
-
-        
-
       </Card>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Label, ListGroup, ListGroupItem, Badge } from "reactstrap";
-import { Scrollbars } from 'react-custom-scrollbars-2';
+import { Scrollbars } from "react-custom-scrollbars-2";
+import "./CategorySection.css";
 
 const CategorySection = ({ searchBrand, setSearchBrand, props }) => {
   const [toyotaBadge, setToyotaBadge] = useState("");
@@ -18,7 +19,6 @@ const CategorySection = ({ searchBrand, setSearchBrand, props }) => {
   const [kiaBadge, setkiaBadge] = useState("");
   const [landroverBadge, setlandroverBadge] = useState("");
   const [miniBadge, setminiBadge] = useState("");
-
 
   const autos = [
     { display: "toyota", value: "toyota", badge: toyotaBadge },
@@ -58,56 +58,56 @@ const CategorySection = ({ searchBrand, setSearchBrand, props }) => {
 
     for (let i = 0; i < sum.length; i++) {
       if (sum[i] === "toyota") toyota++;
-      else if(sum[i] === "mercedes") mercedes++
-      else if(sum[i] === "bmw") bmw++
-      else if(sum[i] === "honda") honda++
-      else if(sum[i] === "hyundai") hyundai++
-      else if(sum[i] === "tesla") tesla++
-      else if(sum[i] === "ford") ford++
-      else if(sum[i] === "audi") audi++
-      else if(sum[i] === "volkswagen") volkswagen++
-      else if(sum[i] === "porsche") porsche++
-      else if(sum[i] === "nissan") nissan++
-      else if(sum[i] === "ferrari") ferrari++
-      else if(sum[i] === "kia") kia++
-      else if(sum[i] === "landrover") landrover++
-      else if(sum[i] === "mini") mini++
+      else if (sum[i] === "mercedes") mercedes++;
+      else if (sum[i] === "bmw") bmw++;
+      else if (sum[i] === "honda") honda++;
+      else if (sum[i] === "hyundai") hyundai++;
+      else if (sum[i] === "tesla") tesla++;
+      else if (sum[i] === "ford") ford++;
+      else if (sum[i] === "audi") audi++;
+      else if (sum[i] === "volkswagen") volkswagen++;
+      else if (sum[i] === "porsche") porsche++;
+      else if (sum[i] === "nissan") nissan++;
+      else if (sum[i] === "ferrari") ferrari++;
+      else if (sum[i] === "kia") kia++;
+      else if (sum[i] === "landrover") landrover++;
+      else if (sum[i] === "mini") mini++;
       setToyotaBadge(toyota);
-      setmercedesBadge(mercedes)
-      setbmwBadge(bmw)
-      sethondaBadge(honda)
-      sethyundaiBadge(hyundai)
-      setteslaBadge(tesla)
-      setfordBadge(ford)
-      setaudiBadge(audi)
-      setvolkswagenBadge(volkswagen)
-      setporscheBadge(porsche)
-      setnissanBadge(nissan)
-      setferrariBadge(ferrari)
-      setkiaBadge(kia)
-      setlandroverBadge(landrover)
-      setminiBadge(mini)
+      setmercedesBadge(mercedes);
+      setbmwBadge(bmw);
+      sethondaBadge(honda);
+      sethyundaiBadge(hyundai);
+      setteslaBadge(tesla);
+      setfordBadge(ford);
+      setaudiBadge(audi);
+      setvolkswagenBadge(volkswagen);
+      setporscheBadge(porsche);
+      setnissanBadge(nissan);
+      setferrariBadge(ferrari);
+      setkiaBadge(kia);
+      setlandroverBadge(landrover);
+      setminiBadge(mini);
     }
   }, []);
 
   return (
-    <div className="CategorySection__page">
-      <Card>
-        <Label for="exampleSelect">Otomobil</Label>
+    <div>
+      <Card className="CategorySection__page">
+        <label className="CategorySection__title" for="exampleSelect">Otomobil</label>
         <Scrollbars style={{ width: 175, height: 275 }}>
-        <ListGroup className="CategorySection__ListGroup">
-          {autos.map((values) => (
-            <div>
-              <ListGroupItem
-                value={searchBrand}
-                onClick={(e) => setSearchBrand(values.value)}
-                className="justify-content-between"
-              >
-                {values.display} <Badge pill>{values.badge}</Badge>
-              </ListGroupItem>
-            </div>
-          ))}
-        </ListGroup>
+          <ListGroup className="CategorySection__ListGroup">
+            {autos.map((values) => (
+              <div>
+                <ListGroupItem
+                  value={searchBrand}
+                  onClick={(e) => setSearchBrand(values.value)}
+                  className="justify-content-between"
+                >
+                  {values.display} <Badge pill>{values.badge}</Badge>
+                </ListGroupItem>
+              </div>
+            ))}
+          </ListGroup>
         </Scrollbars>
       </Card>
     </div>
