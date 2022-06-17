@@ -10,6 +10,8 @@ import {
   Button,
   Input,
 } from "reactstrap";
+import SignOut from "../Auth/SignOut";
+import SignIn from "../Auth/SignIn";
 
 const Navi = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +24,12 @@ const Navi = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <Input
-                id="auto"
-                name="auto"
-                placeholder="Mercedes"
-                type="text"
-              />
+              <Input id="auto" name="auto" placeholder="Mercedes" type="text" />
             </NavItem>
           </Nav>
           <NavLink href="/addAuto">İlan ver</NavLink>
-          <Button>Giriş yap / Üye Ol</Button>
+          <SignOut />
+          <SignIn />
         </Collapse>
       </Navbar>
     </div>

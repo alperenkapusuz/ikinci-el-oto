@@ -1,13 +1,14 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navi from "./components/Navbar/Navi";
-import DUMMY_AUTO from "./Data/Data"
+import DUMMY_AUTO from "./Data/Data";
 import AutoList from "./components/MainMenu/AutoList/AutoList";
 import AutoAdd from "./components/AutoAdd/AutoAdd";
 import AutoDetail from "./components/AutoDetail/AutoDetail";
+import Error from "./components/Error/Error";
 
 const App = () => {
-  const [autos, setAutos] = useState([]) 
+  const [autos, setAutos] = useState([]);
 
   useEffect(() => {
     getItem();
@@ -15,23 +16,23 @@ const App = () => {
 
   const getItem = () => {
     const localData = localStorage.getItem("data") ?? [];
-    if(localData.length===0){
-      localData.push(...DUMMY_AUTO)
+    if (localData.length === 0) {
+      localData.push(...DUMMY_AUTO);
       setAutos(localData);
-    }else{
+    } else {
       setAutos(JSON.parse(localData));
-    } 
+    }
   };
-
 
   return (
     <div>
       <BrowserRouter>
         <Navi />
         <Routes>
-          <Route path="/" element={<AutoList items={autos}/>}/>
-          <Route path="/addAuto" element={<AutoAdd/>}/>
-          <Route path="/:autoId" element={<AutoDetail items={autos}/>}/>
+          <Route path="/" element={<AutoList items={autos} />} />
+          <Route path="/addAuto" element={<AutoAdd />} />
+          <Route path="/:autoId" element={<AutoDetail items={autos} />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
