@@ -17,9 +17,11 @@
 }
 
 .AutoList__Card{
-  width: 1000px;
+  width: 1032px;
   /* background-color: red; */
   margin-top: 10px;
+  margin-left: 1px;
+  margin-bottom: 21px;
 }
 
 .AutoList__CardBody{
@@ -39,4 +41,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: -10px ;
+}
+
+
+.AutoCard__Link{
+  text-decoration: none;
+  color: rgb(60, 60, 60);
 }
