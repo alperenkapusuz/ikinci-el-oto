@@ -59,7 +59,7 @@
 }
 
 @media (max-width: 775px) {
-  p {
+  .Chat_p{
     font-size: 20px;
   }
   .sent {
@@ -68,14 +68,14 @@
   .received {
     padding: 10px 10px 0 10px;
   }
-  img {
+  .Chat_img {
     height: 35px;
     margin-top: -10px;
   }
 }
 
 @media (max-width: 500px) {
-  p {
+  .Chat_p {
     font-size: 15px;
   }
   .sent {
@@ -84,7 +84,7 @@
   .received {
     padding: 7px 7px 0 7px;
   }
-  img {
+  .Chat_img {
     height: 30px;
     margin-top: -7px;
   }
