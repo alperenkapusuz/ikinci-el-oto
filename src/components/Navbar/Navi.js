@@ -12,10 +12,13 @@ import {
 } from "reactstrap";
 import SignOut from "../Auth/SignOut";
 import SignIn from "../Auth/SignIn";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase";
 
 const Navi = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const [user] = useAuthState(auth);
   return (
     <div>
       <Navbar color="light" expand="md" light>
@@ -24,12 +27,10 @@ const Navi = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <Input id="auto" name="auto" placeholder="Mercedes" type="text" />
             </NavItem>
           </Nav>
           <NavLink href="/addAuto">İlan ver</NavLink>
-          <SignOut />
-          <SignIn />
+          {user ? (<SignOut />):( <SignIn />)}
         </Collapse>
       </Navbar>
     </div>

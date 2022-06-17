@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Label, ListGroup, ListGroupItem, Badge } from "reactstrap";
+import { Card, ListGroup, ListGroupItem, Badge } from "reactstrap";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import "./CategorySection.css";
 

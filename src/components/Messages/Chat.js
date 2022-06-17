@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { auth, db } from "../../firebase";
 import SendMessages from "./SendMessages";
 import "./Chat.css";
+import { Scrollbars } from "react-custom-scrollbars-2";
 
 function Chat() {
   const scroll = useRef();
@@ -22,6 +23,7 @@ function Chat() {
         <div>
           <SendMessages scroll={scroll} />
         </div>
+        <Scrollbars style={{height:"500px", width:"1160px", marginLeft:"20px" }}>
         <div className="msgs">
           {messages.map(({ id, text, photoURL, uid }) => (
             <div>
@@ -37,7 +39,7 @@ function Chat() {
             </div>
           ))}
         </div>
-        <span ref={scroll}></span>
+        </Scrollbars>
       </div>
     </div>
   );
